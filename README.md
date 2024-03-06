@@ -1,5 +1,5 @@
 # RoboKings - WRO Future Engineers 2024: Autonomous Self Driving Car
-## Team: 
+## Team
 RoboKings (Pakistan)
 
 ## Project Overview
@@ -20,7 +20,6 @@ We're focusing on these key areas to build our autonomous car:
 
 ### Hardware
 
-=======
 | Component | Description | Image | Link 
 |---|---|---|---|
 | **NVIDIA Jetson Nano** | Provides processing power for complex deep learning models. | ![image-removebg-preview (5)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/1dd911b8-c91a-4631-95df-8684bb978abf) | <https://bit.ly/3wKg5TG>
@@ -45,5 +44,5 @@ The RoboKings welcome collaboration! Reach out to us through discussions, pull r
 **Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
 
 
-## Stay Tuned!
+# Stay Tuned!
 This repository is a work in progress. Follow our development journey as we build and refine our self-driving car for the WRO Future Engineers 2024 challenge!
