@@ -1,5 +1,4 @@
 # RoboKings - WRO Future Engineers 2024: Autonomous Self Driving Car
-
 ## Team: 
 RoboKings (Pakistan)
 
@@ -20,19 +19,14 @@ We're focusing on these key areas to build our autonomous car:
 ## Technical Specifications
 
 ### Hardware
-- **NVIDIA Jetson Nano:** Provides processing power for complex deep learning models.
-  ![image-removebg-preview (5)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/1dd911b8-c91a-4631-95df-8684bb978abf)
 
-- **LiDAR Sensor:** Creates a detailed 3D map of the environment for precise navigation and obstacle detection.
-  ![image-removebg-preview (6)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/2bff55ed-4e26-40d4-92c5-fb1c7ce7ac35)
-
-- **2-3 Raspberry Pi Cameras:** Capture rich visual data used for object detection, lane tracking, and path planning.
-  ![image-removebg-preview (7)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/bf8420fb-db4a-40f1-aea0-3e7068d7ce46)
-
-- **RC Car Chassis:** The physical foundation for our self-driving elf car.
-  ![image-removebg-preview (8)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/6ee079b4-d4b6-4248-bf3f-aa68cc311d22)
-
-- **Adafruit Motor Shield:** Enables precise motor control for smooth and reliable movements and steering.
+| Component | Description | Image |
+|---|---|---|
+| **NVIDIA Jetson Nano** | Provides processing power for complex deep learning models. | ![image-removebg-preview (5)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/1dd911b8-c91a-4631-95df-8684bb978abf) |
+| **LiDAR Sensor** | Creates a detailed 3D map of the environment for precise navigation and obstacle detection. | ![image-removebg-preview (6)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/2bff55ed-4e26-40d4-92c5-fb1c7ce7ac35) |
+| **2-3 Raspberry Pi Cameras** | Capture rich visual data used for object detection, lane tracking, and path planning. | ![image-removebg-preview (7)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/bf8420fb-db4a-40f1-aea0-3e7068d7ce46) |
+| **RC Car Chassis** | The physical foundation for our self-driving elf car. | ![image-removebg-preview (8)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/6ee079b4-d4b6-4248-bf3f-aa68cc311d22) |
+| **Adafruit Motor Shield** | Enables precise motor control for smooth and reliable movements and steering. | ![image-removebg-preview (9)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/dcf58b72-aea9-4db2-9e2a-3df08da5f890) |
 
 ### Software
 - **C++:** Forms the core of our development, allowing for efficient code and optimal performance.
@@ -47,7 +41,8 @@ We're focusing on these key areas to build our autonomous car:
 ## Collaboration, Contribution, and Community
 The RoboKings welcome collaboration! Reach out to us through discussions, pull requests, or issues to share your expertise, suggest improvements, or report any challenges you encounter. We're excited to be part of the WRO community and are committed to sharing our progress and lessons learned.
 
-**Disclaimer:** We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
+**Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
+
 
 ## Stay Tuned!
 This repository is a work in progress. Follow our development journey as we build and refine our self-driving car for the WRO Future Engineers 2024 challenge!
