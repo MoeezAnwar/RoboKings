@@ -20,7 +20,6 @@ We're focusing on these key areas to build our autonomous car:
 
 ### Hardware
 
-=======
 | Component | Description | Image | Link 
 |---|---|---|---|
 | **NVIDIA Jetson Nano** | Provides processing power for complex deep learning models. | ![image-removebg-preview (5)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/1dd911b8-c91a-4631-95df-8684bb978abf) | <https://bit.ly/3wKg5TG>
