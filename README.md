@@ -20,13 +20,13 @@ We're focusing on these key areas to build our autonomous car:
 
 ### Hardware
 
-| Component | Description | Image |
-|---|---|---|
-| **NVIDIA Jetson Nano** | Provides processing power for complex deep learning models. | ![image-removebg-preview (5)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/1dd911b8-c91a-4631-95df-8684bb978abf) |
-| **LiDAR Sensor** | Creates a detailed 3D map of the environment for precise navigation and obstacle detection. | ![image-removebg-preview (6)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/2bff55ed-4e26-40d4-92c5-fb1c7ce7ac35) |
-| **2-3 Raspberry Pi Cameras** | Capture rich visual data used for object detection, lane tracking, and path planning. | ![image-removebg-preview (7)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/bf8420fb-db4a-40f1-aea0-3e7068d7ce46) |
-| **RC Car Chassis** | The physical foundation for our self-driving elf car. | ![image-removebg-preview (8)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/6ee079b4-d4b6-4248-bf3f-aa68cc311d22) |
-| **Adafruit Motor Shield** | Enables precise motor control for smooth and reliable movements and steering. | ![image-removebg-preview (9)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/dcf58b72-aea9-4db2-9e2a-3df08da5f890) |
+| Component | Description | Image | Link 
+|---|---|---|---|
+| **NVIDIA Jetson Nano** | Provides processing power for complex deep learning models. | ![image-removebg-preview (5)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/1dd911b8-c91a-4631-95df-8684bb978abf) | <https://bit.ly/3wKg5TG>
+| **LiDAR Sensor** | Creates a detailed 3D map of the environment for precise navigation and obstacle detection. | ![image-removebg-preview (6)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/2bff55ed-4e26-40d4-92c5-fb1c7ce7ac35) |<https://amzn.to/3SXeS2I>
+| **2-3 Raspberry Pi Cameras** | Capture rich visual data used for object detection, lane tracking, and path planning. | ![image-removebg-preview (7)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/bf8420fb-db4a-40f1-aea0-3e7068d7ce46) |<https://amzn.to/4c0Tv9o>
+| **RC Car Chassis** | The physical foundation for our self-driving elf car. | ![image-removebg-preview (8)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/6ee079b4-d4b6-4248-bf3f-aa68cc311d22) |<https://amzn.to/3uPM0Bz>
+| **Adafruit Motor Shield** | Enables precise motor control for smooth and reliable movements and steering. | ![image-removebg-preview (9)](https://github.com/MoeezAnwar/RoboKings/assets/116732848/dcf58b72-aea9-4db2-9e2a-3df08da5f890) |<https://bit.ly/4a2cHle>
 
 ### Software
 - **C++:** Forms the core of our development, allowing for efficient code and optimal performance.
