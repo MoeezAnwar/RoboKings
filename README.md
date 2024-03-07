@@ -50,6 +50,124 @@ The RoboKings welcome collaboration! Reach out to us through discussions, pull r
 
 **Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
 
+## Installation 
+### Vscode & C++ Installation: 
+**Installing Visual Studio Code**
 
-# Stay Tuned!
+Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code in a few different ways:
+
+1. **Remote Development:**
+   * This is the recommended approach for complex development.  Install VS Code on a more powerful desktop computer (Windows, macOS, or Linux).
+   * On your Jetson Nano, install the Remote Development extensions for VS Code: [https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+   * Connect to your Jetson Nano from your desktop VS Code for a seamless development experience.
+
+2. **Install VS Code Server (Less Recommended):**
+    * You can install a lightweight version of VS Code that runs directly on the Jetson Nano   
+
+**Setting Up for C++ Development**
+
+1. **Install C/C++ Extension:** Follow the same instructions as the general guide.
+
+2. **Install a C++ Compiler:**
+   * Use Ubuntu's package manager:
+     ```bash
+     sudo apt-get install g++
+     ```
+
+**Testing Your Setup:**
+
+* Follow the same steps as the general guide for creating a test C++ file, compiling, and running it.
+
+**Additional Considerations for Jetson Nano**
+
+* **Performance:** The Jetson Nano has limited resources compared to a desktop. You might experience some limitations in terms of speed for large projects.
+* **Cross-Compilation:** If you prefer working on a desktop PC, you can set up cross-compilation to build code specifically targeting the Jetson Nano's ARM architecture.
+
+### ROS installation guide for NVIDIA jetson :
+
+**Prerequisites**
+
+* **Operating System:** Ubuntu 18.04 (Bionic Beaver) or Ubuntu 20.04 (Focal Fossa). Check your OS version using `lsb_release -a`.
+* **NVIDIA Hardware:** A compatible NVIDIA device (e.g., Jetson Nano, Jetson Xavier NX, etc.).
+* **NVIDIA JetPack:** If you're using a Jetson device, ensure you have JetPack installed appropriately for your hardware.
+
+**Installation Steps**
+
+1. **Set Up Sources**
+
+   * Configure your Ubuntu repositories to allow "restricted," "universe," and "multiverse."
+   * Add the ROS repository:
+
+     ```bash
+     sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+     sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+     ```
+
+2. **Install ROS**
+
+   * Update your package lists:
+
+     ```bash
+     sudo apt update
+     ```
+
+   * Choose your desired ROS installation:
+
+     * **Desktop-Full Install:** (Recommended for comprehensive use)
+
+       ```bash
+       sudo apt install ros-YOUR-DISTRO-desktop-full
+       ```
+
+     * **Desktop Install:** (Core tools and libraries)
+
+       ```bash
+       sudo apt install ros-YOUR-DISTRO-desktop 
+       ```
+
+     * **Base Install:** (Bare bones ROS)
+
+       ```bash 
+       sudo apt install ros-YOUR-DISTRO-ros-base 
+       ```
+
+   * Replace `YOUR-DISTRO` with either `melodic` (Ubuntu 18.04) or `noetic` (Ubuntu 20.04) 
+
+3. **Initialize `rosdep`**
+
+   ```bash
+   sudo rosdep init
+   rosdep update
+   ```
+
+4. **Environment Setup**
+
+   ```bash
+   echo "source /opt/ros/YOUR-DISTRO/setup.bash" >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+5. **(Optional) Build Tools**
+
+   ```bash
+   sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+   ```
+
+**Testing Your Installation**
+
+1. **New Terminal:** Open a new terminal.
+2. **`roscore`:** 
+
+   ```bash
+   roscore
+   ```
+
+**Additional Notes**
+
+* **Jetson Devices:** If you're using a Jetson device, there might be additional considerations for optimizing ROS with Jetson-specific libraries and tools.
+* **Custom ROS Packages:** If you need to install custom ROS packages, you'll likely use tools like `catkin_make` or `catkin build`.
+
+
+
+## Stay Tuned!
 This repository is a work in progress. Follow our development journey as we build and refine our self-driving car for the WRO Future Engineers 2024 challenge!
