@@ -15,6 +15,9 @@ We're focusing on these key areas to build our autonomous car:
 - **Action Planning and Kinematic Control:** Sophisticated algorithms will enable the car to make decisions and execute maneuvers beyond simple differential drive.
 - **Optimization for Stability:** Our goal is to create a consistently reliable car capable of navigating the various track layouts.
 - **Teamwork and Documentation:** Strong collaboration, communication, and a detailed engineering journal will be critical to our success.
+## Track 
+
+![alt text](image.png)
 
 ## Technical Specifications
 
