@@ -17,7 +17,7 @@ We're focusing on these key areas to build our autonomous car:
 - **Teamwork and Documentation:** Strong collaboration, communication, and a detailed engineering journal will be critical to our success.
 ## Track 
 
-![alt text](image.png)
+![Future Engineer Track ](Track-Picture.png)
 
 ## Technical Specifications
 
