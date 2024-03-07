@@ -1,5 +1,5 @@
 # RoboKings - WRO Future Engineers 2024: Autonomous Self Driving Car
-## Team: 
+## Team
 RoboKings (Pakistan)
 
 ## Project Overview
@@ -15,6 +15,9 @@ We're focusing on these key areas to build our autonomous car:
 - **Action Planning and Kinematic Control:** Sophisticated algorithms will enable the car to make decisions and execute maneuvers beyond simple differential drive.
 - **Optimization for Stability:** Our goal is to create a consistently reliable car capable of navigating the various track layouts.
 - **Teamwork and Documentation:** Strong collaboration, communication, and a detailed engineering journal will be critical to our success.
+## Track 
+
+![alt text](image.png)
 
 ## Technical Specifications
 
@@ -44,5 +47,5 @@ The RoboKings welcome collaboration! Reach out to us through discussions, pull r
 **Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
 
 
-## Stay Tuned!
+# Stay Tuned!
 This repository is a work in progress. Follow our development journey as we build and refine our self-driving car for the WRO Future Engineers 2024 challenge!
