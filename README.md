@@ -7,7 +7,7 @@ RoboKings (Pakistan)
 - Fateh Zeeshan (**Hardware Developer**)
 - Hamza Alam (**Software Developer**)
 
-## Project Overview
+# Project Overview
 We're the RoboKings, a passionate team from Pakistan on a mission to conquer the WRO Future Engineers 2024 challenge by building a fully autonomous self-driving car! Inspired by the magic of Santa's industrious elves, our car is designed to navigate a designated track and complete three laps without human intervention. This project embodies our commitment to robotics, innovation, and the future of intelligent transportation.
 
 ### The WRO Challenge and Our Focus
@@ -20,7 +20,7 @@ We're focusing on these key areas to build our autonomous car:
 - **Action Planning and Kinematic Control:** Sophisticated algorithms will enable the car to make decisions and execute maneuvers beyond simple differential drive.
 - **Optimization for Stability:** Our goal is to create a consistently reliable car capable of navigating the various track layouts.
 - **Teamwork and Documentation:** Strong collaboration, communication, and a detailed engineering journal will be critical to our success.
-## Track Details :
+# Track Details :
 ![Track ](Track-Picture.png)
 
 ## Technical Specifications
@@ -39,7 +39,7 @@ We're focusing on these key areas to build our autonomous car:
 - **C++:** Forms the core of our development, allowing for efficient code and optimal performance.
 - **Open-Source Libraries:** We'll utilize established deep learning libraries like TensorFlow or PyTorch for training our autonomous driving model, plus libraries for sensor integration and motor control.
 
-## Project Structure
+# Project Structure
 - **Documentation:** Comprehensive guides on project goals, hardware setup, software design, the WRO challenge, our engineering journey, and more!
 - **Code:** Well-structured C++ code with clear modularity, informative comments, and adherence to best practices.
 - **Data:** Curated training data for the deep learning model.
@@ -50,7 +50,7 @@ The RoboKings welcome collaboration! Reach out to us through discussions, pull r
 
 **Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
 
-## Installation 
+# Installation 
 ### Vscode & C++ Installation: 
 **Installing Visual Studio Code**
 
@@ -83,7 +83,7 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
 * **Performance:** The Jetson Nano has limited resources compared to a desktop. You might experience some limitations in terms of speed for large projects.
 * **Cross-Compilation:** If you prefer working on a desktop PC, you can set up cross-compilation to build code specifically targeting the Jetson Nano's ARM architecture.
 
-### ROS installation guide for NVIDIA jetson :
+## ROS installation guide for NVIDIA jetson :
 
 **Prerequisites**
 
