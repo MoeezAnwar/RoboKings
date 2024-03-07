@@ -6,8 +6,7 @@ RoboKings (Pakistan)
 - Moeez Anwar (**Software Developer**)
 - Fateh Zeeshan (**Hardware Developer**)
 - Hamza Alam (**Software Developer**)
-## Track Details :
-![Track ](Track-Picture.png)
+
 ## Project Overview
 We're the RoboKings, a passionate team from Pakistan on a mission to conquer the WRO Future Engineers 2024 challenge by building a fully autonomous self-driving car! Inspired by the magic of Santa's industrious elves, our car is designed to navigate a designated track and complete three laps without human intervention. This project embodies our commitment to robotics, innovation, and the future of intelligent transportation.
 
@@ -21,6 +20,8 @@ We're focusing on these key areas to build our autonomous car:
 - **Action Planning and Kinematic Control:** Sophisticated algorithms will enable the car to make decisions and execute maneuvers beyond simple differential drive.
 - **Optimization for Stability:** Our goal is to create a consistently reliable car capable of navigating the various track layouts.
 - **Teamwork and Documentation:** Strong collaboration, communication, and a detailed engineering journal will be critical to our success.
+## Track Details :
+![Track ](Track-Picture.png)
 
 ## Technical Specifications
 
