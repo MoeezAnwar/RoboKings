@@ -1,6 +1,7 @@
 # RoboKings - WRO Future Engineers 2024: Autonomous Self Driving Car
 ## Team
 RoboKings (Pakistan)
+- **School Name:** Future World School - Signature Campus
 
 ### Member Details :
 - Moeez Anwar (**Software Developer**)
