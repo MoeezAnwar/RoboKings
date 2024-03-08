@@ -1,12 +1,13 @@
-# RoboKings - WRO Future Engineers 2024: Autonomous Self Driving Car
-## Team
+# RoboKings - WRO Future Engineers 2024
 RoboKings (Pakistan)
 - **School Name:** Future World School - Signature Campus
 
 ### Member Details :
-- Moeez Anwar (**Software Developer**)
-- Fateh Zeeshan (**Hardware Developer**)
-- Hamza Alam (**Software Developer**)
+1. Moeez Anwar (**Software Developer**)
+2. Fateh Zeeshan (**Hardware Developer**)
+3. Hamza Alam (**Software Developer**)
+
+
 
 # Project Overview
 We're the RoboKings, a passionate team from Pakistan on a mission to conquer the WRO Future Engineers 2024 challenge by building a fully autonomous self-driving car! Inspired by the magic of Santa's industrious elves, our car is designed to navigate a designated track and complete three laps without human intervention. This project embodies our commitment to robotics, innovation, and the future of intelligent transportation.
@@ -49,7 +50,9 @@ We're focusing on these key areas to build our autonomous car:
 ## Collaboration, Contribution, and Community
 The RoboKings welcome collaboration! Reach out to us through discussions, pull requests, or issues to share your expertise, suggest improvements, or report any challenges you encounter. We're excited to be part of the WRO community and are committed to sharing our progress and lessons learned.
 
-**Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
+> [!IMPORTANT]
+>  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
+
 
 # Installation 
 ### Vscode & C++ Installation: 
@@ -78,19 +81,18 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
 **Testing Your Setup:**
 
 * Follow the same steps as the general guide for creating a test C++ file, compiling, and running it.
+>[!NOTE]
+>**Additional Considerations for Jetson Nano**
+>* **Performance:** The Jetson Nano has limited resources compared to a desktop. You might experience some limitations in terms of speed for large projects.
+>* **Cross-Compilation:** If you prefer working on a desktop PC, you can set up cross-compilation to build code specifically targeting the Jetson Nano's ARM architecture.
 
-**Additional Considerations for Jetson Nano**
+## ROS installation guide for NVIDIA jetson
 
-* **Performance:** The Jetson Nano has limited resources compared to a desktop. You might experience some limitations in terms of speed for large projects.
-* **Cross-Compilation:** If you prefer working on a desktop PC, you can set up cross-compilation to build code specifically targeting the Jetson Nano's ARM architecture.
-
-## ROS installation guide for NVIDIA jetson :
-
-**Prerequisites**
-
-* **Operating System:** Ubuntu 18.04 (Bionic Beaver) or Ubuntu 20.04 (Focal Fossa). Check your OS version using `lsb_release -a`.
-* **NVIDIA Hardware:** A compatible NVIDIA device (e.g., Jetson Nano, Jetson Xavier NX, etc.).
-* **NVIDIA JetPack:** If you're using a Jetson device, ensure you have JetPack installed appropriately for your hardware.
+>[!IMPORTANT]
+>**Prerequisites**
+>* **Operating System:** Ubuntu 18.04 (Bionic Beaver) or Ubuntu 20.04 (Focal Fossa). Check your OS version using `lsb_release -a`.
+>* **NVIDIA Hardware:** A compatible NVIDIA device (e.g., Jetson Nano, Jetson Xavier NX, etc.).
+>* **NVIDIA JetPack:** If you're using a Jetson device, ensure you have JetPack installed appropriately for your hardware.
 
 **Installation Steps**
 
@@ -163,10 +165,64 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
    roscore
    ```
 
-**Additional Notes**
+## Auto Install Script 
+Here's a bash script that automates the installation of ROS, Visual Studio Code (using the Remote Development approach), and the C++ setup on an Ubuntu-based NVIDIA Jetson Nano. 
+>[!IMPORTANT]
+>* **Customization:** You'll likely need to adjust paths and versions based on your specific requirements.
+>* **JetPack:** I'm assuming you have JetPack installed.
+>* **Remote Machine:** This script assumes you have a desktop machine ready for remote development with VS Code installed.
+>* **ROS Distribution:** I've used 'melodic' (for Ubuntu 18.04). Replace with 'noetic' if you're using Ubuntu 20.04.
 
-* **Jetson Devices:** If you're using a Jetson device, there might be additional considerations for optimizing ROS with Jetson-specific libraries and tools.
-* **Custom ROS Packages:** If you need to install custom ROS packages, you'll likely use tools like `catkin_make` or `catkin build`.
+**The Script (`jetson_setup.sh`)**
+
+```bash
+#!/bin/bash
+
+# ROS Installation
+echo "== Installing ROS =="
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt update
+sudo apt install ros-melodic-desktop-full -y
+sudo rosdep init
+rosdep update
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+# VS Code Remote Development Setup
+echo "== Setting up VS Code Remote Development =="
+sudo apt install openssh-server -y  # Install SSH server if not already present 
+sudo apt install -y libssl-dev libxkbfile-dev build-essential # Install dependencies
+
+# Install the Remote Development Extensions on your Jetson Nano (refer to the official documentation for the latest URLs)
+wget -O vscode_remote.deb "https://update.code.visualstudio.com/latest/linux-arm64-deb/stable" # Replace with the latest version URL
+sudo apt install ./vscode_remote.deb
+
+# C++ Setup
+echo "== Installing C++ Compiler =="
+sudo apt install g++ -y
+
+echo "== Installation Complete =="
+echo "**Important:**"
+echo "- On your desktop VS Code, connect to your Jetson Nano using Remote Development."
+echo "- Ensure necessary C++ build tools are configured on your desktop machine."
+```
+
+**How to Use**
+
+1. **Create the Script:** Copy the code above and save it as `jetson_setup.sh` on your Jetson Nano.
+2. **Make it Executable:**
+   ```bash
+   chmod +x jetson_setup.sh
+   ```
+3. **Run the Script:**
+   ```bash
+   ./jetson_setup.sh
+   ```
+
+>[!NOTE]
+>**Remember to adjust versions, paths, and setup your desktop VS Code for Remote Development to complete the process!**
+
 
 
 
