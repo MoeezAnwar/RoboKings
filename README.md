@@ -3,9 +3,11 @@ RoboKings (Pakistan)
 - **School Name:** Future World School - Signature Campus
 
 ### Member Details :
-- Moeez Anwar (**Software Developer**)
-- Fateh Zeeshan (**Hardware Developer**)
-- Hamza Alam (**Software Developer**)
+1. Moeez Anwar (**Software Developer**)
+2. Fateh Zeeshan (**Hardware Developer**)
+3. Hamza Alam (**Software Developer**)
+
+
 
 # Project Overview
 We're the RoboKings, a passionate team from Pakistan on a mission to conquer the WRO Future Engineers 2024 challenge by building a fully autonomous self-driving car! Inspired by the magic of Santa's industrious elves, our car is designed to navigate a designated track and complete three laps without human intervention. This project embodies our commitment to robotics, innovation, and the future of intelligent transportation.
@@ -48,7 +50,9 @@ We're focusing on these key areas to build our autonomous car:
 ## Collaboration, Contribution, and Community
 The RoboKings welcome collaboration! Reach out to us through discussions, pull requests, or issues to share your expertise, suggest improvements, or report any challenges you encounter. We're excited to be part of the WRO community and are committed to sharing our progress and lessons learned.
 
-**Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
+> [!CAUTION]
+>**Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
+
 
 # Installation 
 ### Vscode & C++ Installation: 
