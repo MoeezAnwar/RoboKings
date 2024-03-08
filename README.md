@@ -50,8 +50,8 @@ We're focusing on these key areas to build our autonomous car:
 ## Collaboration, Contribution, and Community
 The RoboKings welcome collaboration! Reach out to us through discussions, pull requests, or issues to share your expertise, suggest improvements, or report any challenges you encounter. We're excited to be part of the WRO community and are committed to sharing our progress and lessons learned.
 
-> [!CAUTION]
->**Disclaimer:**  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
+> [!IMPORTANT]
+>  We may not be able to disclose certain implementation details related to our deep learning model or proprietary algorithms to safeguard our competitive edge.
 
 
 # Installation 
@@ -168,13 +168,12 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
 
 ## Auto Install Script 
 Here's a bash script that automates the installation of ROS, Visual Studio Code (using the Remote Development approach), and the C++ setup on an Ubuntu-based NVIDIA Jetson Nano. 
-
-**Important Notes:**
-
-* **Customization:** You'll likely need to adjust paths and versions based on your specific requirements.
-* **JetPack:** I'm assuming you have JetPack installed.
-* **Remote Machine:** This script assumes you have a desktop machine ready for remote development with VS Code installed.
-* **ROS Distribution:** I've used 'melodic' (for Ubuntu 18.04). Replace with 'noetic' if you're using Ubuntu 20.04.
+>[!IMPORTANT]
+>**Important Notes:**
+>* **Customization:** You'll likely need to adjust paths and versions based on your specific requirements.
+>* **JetPack:** I'm assuming you have JetPack installed.
+>* **Remote Machine:** This script assumes you have a desktop machine ready for remote development with VS Code installed.
+>* **ROS Distribution:** I've used 'melodic' (for Ubuntu 18.04). Replace with 'noetic' if you're using Ubuntu 20.04.
 
 **The Script (`jetson_setup.sh`)**
 
