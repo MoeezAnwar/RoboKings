@@ -1,5 +1,4 @@
-# RoboKings - WRO Future Engineers 2024: Autonomous Self Driving Car
-## Team
+# RoboKings - WRO Future Engineers 2024
 RoboKings (Pakistan)
 - **School Name:** Future World School - Signature Campus
 
@@ -84,7 +83,7 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
 * **Performance:** The Jetson Nano has limited resources compared to a desktop. You might experience some limitations in terms of speed for large projects.
 * **Cross-Compilation:** If you prefer working on a desktop PC, you can set up cross-compilation to build code specifically targeting the Jetson Nano's ARM architecture.
 
-## ROS installation guide for NVIDIA jetson :
+## ROS installation guide for NVIDIA jetson
 
 **Prerequisites**
 
