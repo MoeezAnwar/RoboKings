@@ -81,19 +81,18 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
 **Testing Your Setup:**
 
 * Follow the same steps as the general guide for creating a test C++ file, compiling, and running it.
-
-**Additional Considerations for Jetson Nano**
-
-* **Performance:** The Jetson Nano has limited resources compared to a desktop. You might experience some limitations in terms of speed for large projects.
-* **Cross-Compilation:** If you prefer working on a desktop PC, you can set up cross-compilation to build code specifically targeting the Jetson Nano's ARM architecture.
+>[!NOTE]
+>**Additional Considerations for Jetson Nano**
+>* **Performance:** The Jetson Nano has limited resources compared to a desktop. You might experience some limitations in terms of speed for large projects.
+>* **Cross-Compilation:** If you prefer working on a desktop PC, you can set up cross-compilation to build code specifically targeting the Jetson Nano's ARM architecture.
 
 ## ROS installation guide for NVIDIA jetson
 
-**Prerequisites**
-
-* **Operating System:** Ubuntu 18.04 (Bionic Beaver) or Ubuntu 20.04 (Focal Fossa). Check your OS version using `lsb_release -a`.
-* **NVIDIA Hardware:** A compatible NVIDIA device (e.g., Jetson Nano, Jetson Xavier NX, etc.).
-* **NVIDIA JetPack:** If you're using a Jetson device, ensure you have JetPack installed appropriately for your hardware.
+>[!IMPORTANT]
+>**Prerequisites**
+>* **Operating System:** Ubuntu 18.04 (Bionic Beaver) or Ubuntu 20.04 (Focal Fossa). Check your OS version using `lsb_release -a`.
+>* **NVIDIA Hardware:** A compatible NVIDIA device (e.g., Jetson Nano, Jetson Xavier NX, etc.).
+>* **NVIDIA JetPack:** If you're using a Jetson device, ensure you have JetPack installed appropriately for your hardware.
 
 **Installation Steps**
 
@@ -169,7 +168,6 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
 ## Auto Install Script 
 Here's a bash script that automates the installation of ROS, Visual Studio Code (using the Remote Development approach), and the C++ setup on an Ubuntu-based NVIDIA Jetson Nano. 
 >[!IMPORTANT]
->**Important Notes:**
 >* **Customization:** You'll likely need to adjust paths and versions based on your specific requirements.
 >* **JetPack:** I'm assuming you have JetPack installed.
 >* **Remote Machine:** This script assumes you have a desktop machine ready for remote development with VS Code installed.
@@ -222,7 +220,8 @@ echo "- Ensure necessary C++ build tools are configured on your desktop machine.
    ./jetson_setup.sh
    ```
 
-**Remember to adjust versions, paths, and setup your desktop VS Code for Remote Development to complete the process!**
+>[!NOTE]
+>**Remember to adjust versions, paths, and setup your desktop VS Code for Remote Development to complete the process!**
 
 
 
