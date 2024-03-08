@@ -162,10 +162,65 @@ Since the Jetson Nano has an ARM-based architecture, you'll need to get VS Code 
    roscore
    ```
 
-**Additional Notes**
+## Auto Install Script 
+Here's a bash script that automates the installation of ROS, Visual Studio Code (using the Remote Development approach), and the C++ setup on an Ubuntu-based NVIDIA Jetson Nano. 
 
-* **Jetson Devices:** If you're using a Jetson device, there might be additional considerations for optimizing ROS with Jetson-specific libraries and tools.
-* **Custom ROS Packages:** If you need to install custom ROS packages, you'll likely use tools like `catkin_make` or `catkin build`.
+**Important Notes:**
+
+* **Customization:** You'll likely need to adjust paths and versions based on your specific requirements.
+* **JetPack:** I'm assuming you have JetPack installed.
+* **Remote Machine:** This script assumes you have a desktop machine ready for remote development with VS Code installed.
+* **ROS Distribution:** I've used 'melodic' (for Ubuntu 18.04). Replace with 'noetic' if you're using Ubuntu 20.04.
+
+**The Script (`jetson_setup.sh`)**
+
+```bash
+#!/bin/bash
+
+# ROS Installation
+echo "== Installing ROS =="
+sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+sudo apt update
+sudo apt install ros-melodic-desktop-full -y
+sudo rosdep init
+rosdep update
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+# VS Code Remote Development Setup
+echo "== Setting up VS Code Remote Development =="
+sudo apt install openssh-server -y  # Install SSH server if not already present 
+sudo apt install -y libssl-dev libxkbfile-dev build-essential # Install dependencies
+
+# Install the Remote Development Extensions on your Jetson Nano (refer to the official documentation for the latest URLs)
+wget -O vscode_remote.deb "https://update.code.visualstudio.com/latest/linux-arm64-deb/stable" # Replace with the latest version URL
+sudo apt install ./vscode_remote.deb
+
+# C++ Setup
+echo "== Installing C++ Compiler =="
+sudo apt install g++ -y
+
+echo "== Installation Complete =="
+echo "**Important:**"
+echo "- On your desktop VS Code, connect to your Jetson Nano using Remote Development."
+echo "- Ensure necessary C++ build tools are configured on your desktop machine."
+```
+
+**How to Use**
+
+1. **Create the Script:** Copy the code above and save it as `jetson_setup.sh` on your Jetson Nano.
+2. **Make it Executable:**
+   ```bash
+   chmod +x jetson_setup.sh
+   ```
+3. **Run the Script:**
+   ```bash
+   ./jetson_setup.sh
+   ```
+
+**Remember to adjust versions, paths, and setup your desktop VS Code for Remote Development to complete the process!**
+
 
 
 
