@@ -1,7 +1,6 @@
 # RoboKings - WRO Future Engineers 2024
 RoboKings (Pakistan)
-- **School Name:** Future World School - Signature Campus
-
+- **School Name:** MindCortex 
 ### Member Details :
 1. Moeez Anwar (**Software Developer**)
 2. Fateh Zeeshan (**Hardware Developer**)
