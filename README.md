@@ -4,7 +4,7 @@ RoboKings (Pakistan)
 ### Member Details :
 1. Moeez Anwar (**Software Developer**)
 2. Fateh Zeeshan (**Hardware Developer**)
-3. Hamza Alam (**Software Developer**)
+3. Muhammad Dayyan (**Software Developer**)
 
 
 
